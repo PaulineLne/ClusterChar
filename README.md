@@ -1,10 +1,10 @@
 ### ClusterChar
 
-\#\#Aim Univariate and multivariate characterization of a clustering
-process with ggplot2. Calculate partition evaluation measures.
+## Aim 
+Univariate and multivariate characterization of a clustering process with ggplot2. Calculate partition evaluation measures.
 
-\#\#Installation After unzipping the project. For install package in
-local:
+## Installation 
+For install package in local: After to download and unzipping the project. 
 
     if(!require(devtools)){install.packages("devtools")}
     if(!require(roxygen2)){devtools::install_github("klutometis/roxygen")}
