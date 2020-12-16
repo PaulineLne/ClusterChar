@@ -21,14 +21,14 @@ local:
     devtools::install("ClusterChar")
 
     ##          checking for file 'C:\Users\paupa\ClusterChar/DESCRIPTION' ...  v  checking for file 'C:\Users\paupa\ClusterChar/DESCRIPTION'
-    ##       -  preparing 'ClusterChar': (782ms)
+    ##       -  preparing 'ClusterChar': (975ms)
     ##    checking DESCRIPTION meta-information ...  v  checking DESCRIPTION meta-information
     ##       -  checking for LF line-endings in source and make files and shell scripts
     ##       -  checking for empty or unneeded directories
     ##       -  building 'ClusterChar_0.0.0.9000.tar.gz'
     ##      
     ## Running "C:/PROGRA~1/R/R-36~1.3/bin/x64/Rcmd.exe" INSTALL \
-    ##   "C:\Users\paupa\AppData\Local\Temp\RtmpaA2ned/ClusterChar_0.0.0.9000.tar.gz" \
+    ##   "C:\Users\paupa\AppData\Local\Temp\RtmpSwiMc2/ClusterChar_0.0.0.9000.tar.gz" \
     ##   --install-tests 
     ## * installing to library 'D:/OneDrive/Documents/R/win-library/3.6'
     ## * installing *source* package 'ClusterChar' ...
@@ -103,8 +103,8 @@ For install with git hub:
 
     ## Downloading GitHub repo PaulineLne/ClusterChar@HEAD
 
-    ##          checking for file 'C:\Users\paupa\AppData\Local\Temp\RtmpaA2ned\remotes135c7ded3698\PaulineLne-ClusterChar-af3206a/DESCRIPTION' ...  v  checking for file 'C:\Users\paupa\AppData\Local\Temp\RtmpaA2ned\remotes135c7ded3698\PaulineLne-ClusterChar-af3206a/DESCRIPTION' (401ms)
-    ##       -  preparing 'ClusterChar':
+    ##          checking for file 'C:\Users\paupa\AppData\Local\Temp\RtmpSwiMc2\remotes2f9015de855\PaulineLne-ClusterChar-0dc3bb6/DESCRIPTION' ...     checking for file 'C:\Users\paupa\AppData\Local\Temp\RtmpSwiMc2\remotes2f9015de855\PaulineLne-ClusterChar-0dc3bb6/DESCRIPTION' ...   v  checking for file 'C:\Users\paupa\AppData\Local\Temp\RtmpSwiMc2\remotes2f9015de855\PaulineLne-ClusterChar-0dc3bb6/DESCRIPTION' (364ms)
+    ##       -  preparing 'ClusterChar': (439ms)
     ##    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
     ##       -  checking for LF line-endings in source and make files and shell scripts
     ##       -  checking for empty or unneeded directories
@@ -160,7 +160,7 @@ Caractérisation univarié
     obj <- Perform_UniChar(X,y)
     plot(obj)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
     #Analyse pour les données qualitative
     vCramer <- vcramer.UniChar(obj,y)
@@ -193,7 +193,7 @@ Caractérisation univarié
     ## sex            0.5538446            sex
     ## native_country 0.4534297 native_country
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-6-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-6-1.png)
 
     vval <- vtest.UniChar(obj,y, 'education')
     vtest <- as.data.frame(t(vval))
@@ -216,7 +216,7 @@ Caractérisation univarié
 
     radar(vtest)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-7-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-7-1.png)
 
     #Analyse pour les données 
     #Correlation, caracterisation des partitions
@@ -251,7 +251,7 @@ Caractérisation univarié
     ## capital_loss    1.681175   capital_loss
     ## hours_per_week  8.534209 hours_per_week
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-8-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-8-1.png)
 
     #Valeur test, caracterisation des groupes
     vt <- valuetest(obj,y)
@@ -266,7 +266,7 @@ Caractérisation univarié
 
     radar(vt)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-9-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-9-1.png)
 
     #Effect size, caracterisation des groupes
     es <- effectsize(obj,y)
@@ -287,7 +287,7 @@ Caractérisation univarié
 
     radar(es)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-10-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-10-1.png)
 
 Carastérisation multivarié
 --------------------------
@@ -459,7 +459,7 @@ Carastérisation multivarié
 
     plot(multivariate$correlation)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-11-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-11-1.png)
 
     #Printing and plotting the results of indexes
     print(measures$internal)
@@ -484,7 +484,7 @@ Carastérisation multivarié
 
     plot(measures)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-11-2.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-11-2.png)
 
     # ACP
     y <- as.vector(t(df[1:1000,'cluster']))
@@ -616,7 +616,7 @@ Carastérisation multivarié
 
     plot(multivariate$correlation)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-12-1.png)
 
     #Printing and plotting the results of indexes
     print(measures$internal)
@@ -641,7 +641,7 @@ Carastérisation multivarié
 
     plot(measures)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-12-2.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-12-2.png)
 
     #Avec y=y_true
     y <- as.vector(t(df[1:1000,'cluster']))
@@ -738,7 +738,7 @@ Carastérisation multivarié
 
     plot(multivariate$correlation)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-13-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-13-1.png)
 
     #Printing and plotting the results of indexes
     print(measures$internal)
@@ -763,7 +763,7 @@ Carastérisation multivarié
 
     plot(measures)
 
-![](tutorial_census_files/figure-markdown_strict/unnamed-chunk-13-2.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-13-2.png)
 
     # ### Avec y et y_true
     # y <- as.vector(t(df[1:1000,'cluster']))
