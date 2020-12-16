@@ -6,129 +6,17 @@ process with ggplot2. Calculate partition evaluation measures.
 \#\#Installation After unzipping the project. For install package in
 local:
 
-    setwd("C:/users/paupa")
     if(!require(devtools)){install.packages("devtools")}
-
-    ## Loading required package: devtools
-
-    ## Loading required package: usethis
-
     if(!require(roxygen2)){devtools::install_github("klutometis/roxygen")}
-
-    ## Loading required package: roxygen2
-
     library(devtools)
     devtools::install("ClusterChar")
-
-    ##          checking for file 'C:\Users\paupa\ClusterChar/DESCRIPTION' ...  v  checking for file 'C:\Users\paupa\ClusterChar/DESCRIPTION'
-    ##       -  preparing 'ClusterChar': (975ms)
-    ##    checking DESCRIPTION meta-information ...  v  checking DESCRIPTION meta-information
-    ##       -  checking for LF line-endings in source and make files and shell scripts
-    ##       -  checking for empty or unneeded directories
-    ##       -  building 'ClusterChar_0.0.0.9000.tar.gz'
-    ##      
-    ## Running "C:/PROGRA~1/R/R-36~1.3/bin/x64/Rcmd.exe" INSTALL \
-    ##   "C:\Users\paupa\AppData\Local\Temp\RtmpSwiMc2/ClusterChar_0.0.0.9000.tar.gz" \
-    ##   --install-tests 
-    ## * installing to library 'D:/OneDrive/Documents/R/win-library/3.6'
-    ## * installing *source* package 'ClusterChar' ...
-    ## ** using staged installation
-    ## ** R
-    ## ** byte-compile and prepare package for lazy loading
-    ## Warning: replacing previous import 'dplyr::combine' by 'gridExtra::combine' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'creditmodel::log_trans' by 'scales::log_trans' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::filter' by 'stats::filter' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::lag' by 'stats::lag' when loading 'ClusterChar'
-    ## ** help
-    ## *** installing help indices
-    ##   converting help for package     finding HTML links ...'ClusterChar'
-    ##  fini
-    ##     Perform_UniChar                         html  
-    ##     barplt.UniChar                          html  
-    ##     circleFun                               html  
-    ##     correlation                             html  
-    ##     correlation.UniChar                     html  
-    ##     correlation.default                     html  
-    ##     correlation_circle                      html  
-    ##     d                                       html  
-    ##     effectsize                              html  
-    ##     effectsize.UniChar                      html  
-    ##     effectsize.default                      html  
-    ##     indexes                                 html  
-    ##     multivariate_charac                     html  
-    ##     plot.UniChar                            html  
-    ##     plot.list.corr                          html  
-    ##     plot.measures                           html  
-    ##     print.confusion.matrix                  html  
-    ##     radar                                   html  
-    ##     radar.UniChar                           html  
-    ##     radar.default                           html  
-    ##     sep_data                                html  
-    ##     summary.multivariate                    html  
-    ##     valuetest                               html  
-    ##     valuetest.UniChar                       html  
-    ##     valuetest.default                       html  
-    ##     vcramer.UniChar                         html  
-    ##     vtest.UniChar                           html  
-    ## ** building package indices
-    ## ** testing if installed package can be loaded from temporary location
-    ## *** arch - i386
-    ## Warning: replacing previous import 'dplyr::combine' by 'gridExtra::combine' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'creditmodel::log_trans' by 'scales::log_trans' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::filter' by 'stats::filter' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::lag' by 'stats::lag' when loading 'ClusterChar'
-    ## *** arch - x64
-    ## Warning: replacing previous import 'dplyr::combine' by 'gridExtra::combine' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'creditmodel::log_trans' by 'scales::log_trans' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::filter' by 'stats::filter' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::lag' by 'stats::lag' when loading 'ClusterChar'
-    ## ** testing if installed package can be loaded from final location
-    ## *** arch - i386
-    ## Warning: replacing previous import 'dplyr::combine' by 'gridExtra::combine' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'creditmodel::log_trans' by 'scales::log_trans' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::filter' by 'stats::filter' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::lag' by 'stats::lag' when loading 'ClusterChar'
-    ## *** arch - x64
-    ## Warning: replacing previous import 'dplyr::combine' by 'gridExtra::combine' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'creditmodel::log_trans' by 'scales::log_trans' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::filter' by 'stats::filter' when loading 'ClusterChar'
-    ## Warning: replacing previous import 'dplyr::lag' by 'stats::lag' when loading 'ClusterChar'
-    ## ** testing if installed package keeps a record of temporary installation path
-    ## * DONE (ClusterChar)
 
 For install with git hub:
 
     if(!require(devtools)){install.packages("devtools")}
     devtools::install_github("PaulineLne/ClusterChar")
 
-    ## Downloading GitHub repo PaulineLne/ClusterChar@HEAD
-
-    ##          checking for file 'C:\Users\paupa\AppData\Local\Temp\RtmpSwiMc2\remotes2f9015de855\PaulineLne-ClusterChar-0dc3bb6/DESCRIPTION' ...     checking for file 'C:\Users\paupa\AppData\Local\Temp\RtmpSwiMc2\remotes2f9015de855\PaulineLne-ClusterChar-0dc3bb6/DESCRIPTION' ...   v  checking for file 'C:\Users\paupa\AppData\Local\Temp\RtmpSwiMc2\remotes2f9015de855\PaulineLne-ClusterChar-0dc3bb6/DESCRIPTION' (364ms)
-    ##       -  preparing 'ClusterChar': (439ms)
-    ##    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
-    ##       -  checking for LF line-endings in source and make files and shell scripts
-    ##       -  checking for empty or unneeded directories
-    ##       -  building 'ClusterChar_0.0.0.9000.tar.gz'
-    ##      
-    ## 
-
-    ## Installing package into 'D:/OneDrive/Documents/R/win-library/3.6'
-    ## (as 'lib' is unspecified)
-
-    library(ClusterCharPlot)
-
-    ## Warning: replacing previous import 'dplyr::combine' by 'gridExtra::combine' when
-    ## loading 'ClusterCharPlot'
-
-    ## Warning: replacing previous import 'creditmodel::log_trans' by
-    ## 'scales::log_trans' when loading 'ClusterCharPlot'
-
-    ## Warning: replacing previous import 'dplyr::filter' by 'stats::filter' when
-    ## loading 'ClusterCharPlot'
-
-    ## Warning: replacing previous import 'dplyr::lag' by 'stats::lag' when loading
-    ## 'ClusterCharPlot'
-
+    library(ClusterChar)
     library(readxl)
     library(stats)
 
